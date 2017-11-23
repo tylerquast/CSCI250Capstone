@@ -1,3 +1,11 @@
+# TODO
+This section will be removed as they are completed:
+
+- Everything completed is theoretical, I have no proof any of this works. I need a rasp pi with connects to test the for loops and arrays are set up correctly as I plan to index them. I will do that as soon as I get back to golden
+- Add more effects (Lets shoot for 5 (1/5 Completed))
+- Implement the sparkfun sound detector
+- Implement the usb audio source
+- Fix the readme to be presentable (This document)
 # CSCI250Capstone
 
 
