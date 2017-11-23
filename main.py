@@ -3,12 +3,18 @@
 ######################
 #import RPi.GPIO as IO
 ######################
+import sys
 import time
 import random
 from LED import *
 from cube import *
 from loopAndBlink import *
 import numpy as np
+
+
+#stops python from generating a .pyc file
+sys.dont_write_bytecode = True
+
 
 #Main Class
 

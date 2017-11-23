@@ -1,7 +1,9 @@
+import sys
 from LED import *
 import numpy as np
 
-
+#Stops vim from generating a .pyc file
+sys.dont_write_bytecode = True
 
 
 ####################################

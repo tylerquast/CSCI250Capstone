@@ -5,6 +5,10 @@
 #in theory
 #########################################
 import time
+import sys
+
+#Stops python from generating a .pyc file
+sys.dont_write_bytecode = True
 
 #First effect finished. Loops through each LED turning it 
 #on then off after a short delay.

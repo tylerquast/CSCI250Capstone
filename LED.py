@@ -1,4 +1,9 @@
 #import RPi.GPIO as IO
+import sys
+
+
+#stops vim from generating a .pyc file
+sys.dont_write_bytecode = True
 
 #Class to house the LED objects. Each led in the cube will have
 #its own LED object, therefor 64 LED objects per cube
