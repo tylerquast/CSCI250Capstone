@@ -1,4 +1,7 @@
 #import RPi.GPIO as IO
+
+#Class to house the LED objects. Each led in the cube will have
+#its own LED object, therefor 64 LED objects per cube
 class LED():
 	def __init__(self,pinRow,pinCol):
 		self.pinRow=pinRow
@@ -18,8 +21,12 @@ class LED():
 	#	IO.output(self.pinRow,1)
 	#	IO.output(self.pinCol,0)
 
+	#returns if the LED is on or off. Will be usefull for
+	#debugging and building new effects
 	def getIsOn(self):
 		return self.isOn
 
+	#Returns an array in the form of [pinRow, pinCol]
+	#again will be usefull for debugging
 	def getPins(self):
 		return [self.pinRow,self.pinCol]

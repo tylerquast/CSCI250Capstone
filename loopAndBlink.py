@@ -5,6 +5,9 @@
 #in theory
 #########################################
 import time
+
+#First effect finished. Loops through each LED turning it 
+#on then off after a short delay.
 class loopAndBlink():
 	def loopAndBlinkFunc(self,cube):
 		for x in range(4):
