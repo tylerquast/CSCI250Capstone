@@ -11,7 +11,9 @@ This section will be removed as they are completed:
 
 
 
-here is the Colorado school of mines CSCI 250 Capstone! A 4x4x4 LED cube.
+here is the Colorado school of mines CSCI 250 Capstone! 4x4x4 LED cube.
+
+![alt text](https://i.imgur.com/cT7ZDTf.jpg)
 
 
 # Rasp Pi Connections:
