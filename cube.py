@@ -27,7 +27,10 @@ class cube():
 	def buildCube(self):
 		#Creats a 4x4x4 array to store all the 
  		#LED objects and represent the cube
-		cubeArray = np.zeros((4,4,4))
+		#all the led pins are initially set to 
+		#1,1 which will be changed later
+		LedArray = [[[LED(1,1) for i in range(4)] for j in range(4)] for k in range(4)]
+		
 
 		#A tripple nested for loop where z represents
 		#what row (Height) we are on, and x and y are 
@@ -40,17 +43,17 @@ class cube():
 			for x in range(4):
 				for y in range(4):
 					if(x == 0):
-						tmpLed = LED(24,self.colArray[y][z])
+						LedArray[x][y][z]=LED(24,self.colArray[y][z])
 						#24
 					elif(x == 1):
-						tmpLed = LED(23,self.colArray[y][z])
+						LedArray[x][y][z]=LED(23,self.colArray[y][z])
 						#23
 					elif(x == 2):
-						tmpLed = LED(18,self.colArray[y][z])
+						LedArray[x][y][z]=LED(18,self.colArray[y][z])
 						#18
 					elif(x == 3):
-						tmpLed = LED(21,self.colArray[y][z])
+						LedArray[x][y][z]=LED(21,self.colArray[y][z])
 						#21
 
 		#return the created array of LED Objects
-		return cubeArray
+		return LedArray 

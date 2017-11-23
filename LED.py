@@ -20,3 +20,6 @@ class LED():
 
 	def getIsOn(self):
 		return self.isOn
+
+	def getPins(self):
+		return [self.pinRow,self.pinCol]

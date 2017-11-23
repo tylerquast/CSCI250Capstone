@@ -13,9 +13,9 @@ class loopAndBlink():
 					#cube[x,y,z].on()
 
 					#remove this later
-					print('on')
+					print(cube[x][y][z].getPins())
 					time.sleep(.1)
-					print('off')
+					print(cube[x][y][z].getPins())
 
 					#cube[x,y,z].off()
 					
