@@ -1,8 +1,6 @@
 #Uncomment this when moved to rasp pi, I build this initially on my laptop.
 
-######################
-#import RPi.GPIO as IO
-######################
+import RPi.GPIO as IO
 import sys
 import time
 import random
@@ -11,11 +9,50 @@ from cube import *
 from loopAndBlink import *
 from key import *
 from Mphone import *
+from turnOff import *
 import numpy as np
 
 
 #stops python from generating a .pyc file
 sys.dont_write_bytecode = True
+
+
+
+
+
+
+IO.setwarnings(False)
+
+IO.setmode(IO.BCM)
+
+IO.setup(2,IO.OUT)
+IO.setup(3,IO.OUT)
+IO.setup(4,IO.OUT)
+IO.setup(17,IO.OUT)
+IO.setup(27,IO.OUT)
+IO.setup(22,IO.OUT)
+IO.setup(10,IO.OUT)
+IO.setup(9,IO.OUT)
+IO.setup(11,IO.OUT)
+IO.setup(5,IO.OUT)
+IO.setup(6,IO.OUT)
+IO.setup(13,IO.OUT)
+IO.setup(19,IO.OUT)
+IO.setup(26,IO.OUT)
+IO.setup(14,IO.OUT)
+IO.setup(15,IO.OUT)
+IO.setup(21,IO.OUT)
+IO.setup(18,IO.OUT)
+IO.setup(23,IO.OUT)
+IO.setup(24,IO.OUT)
+
+
+
+
+
+
+
+
 
 
 #Main Class
@@ -29,6 +66,13 @@ cube = cube()
 #All leds are turned off by defualt
 cubeArray = cube.buildCube()
 
+
+
+
+
+#an object that will be used to turn the cube off before and after each effect
+turnOffer = turnOff()
+turnOffer.turnOffFunc(cubeArray)
 
 #A sparkfun sound detector is used to trigger various 
 #effects with claps
@@ -65,10 +109,12 @@ try:
             print('no input detected')
         
         elif choice == 1:
-		print('pattern One')
+                turnOffer.turnOffFunc(cubeArray)
+                tmp = loopAndBlink()
+                tmp.loopAndBlinkFunc(cubeArray)
 
         elif choice == 2:
-		print('pattern Two')
+                turnOffer.turnOffFunc(cubeArray)
 
         elif choice == 3:
 		print('pattern Three')

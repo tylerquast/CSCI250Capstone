@@ -17,12 +17,10 @@ class loopAndBlink():
 		for x in range(4):
 			for y in range(4):
 				for z in range(4):
-					#cube[x,y,z].on()
+					cube[x][y][z].on()
 
 					#remove this later
-					print(cube[x][y][z].getPins())
 					time.sleep(.1)
-					print(cube[x][y][z].getPins())
 
-					#cube[x,y,z].off()
+					cube[x][y][z].off()
 					
