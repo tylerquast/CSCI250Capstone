@@ -41,9 +41,9 @@ class cube():
 		#
 		#*Note: the commented number in each if
 		#represents the GPIO of the row we are on.
-		for z in range(4):
-			for x in range(4):
-				for y in range(4):
+		for x in range(4):
+			for y in range(4):
+				for z in range(4):
 					if(x == 0):
 						LedArray[x][y][z]=LED(24,self.colArray[y][z])
 						#24

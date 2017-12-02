@@ -10,6 +10,7 @@ from loopAndBlink import *
 from key import *
 from Mphone import *
 from turnOff import *
+from musicAnalyzer import *
 import numpy as np
 
 
@@ -115,9 +116,12 @@ try:
 
         elif choice == 2:
                 turnOffer.turnOffFunc(cubeArray)
+                cubeArray[0][0][1].on()
 
         elif choice == 3:
-		print('pattern Three')
+            turnOffer.turnOffFunc(cubeArray)
+            tmp = musicAnalyzer()
+            tmp.musicAnalyzerFunc(cubeArray)
 
         #can add more pattern choices below here
 
