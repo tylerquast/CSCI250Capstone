@@ -11,6 +11,7 @@ from key import *
 from Mphone import *
 from turnOff import *
 from musicAnalyzer import *
+from randomEffect import *
 import numpy as np
 
 
@@ -55,7 +56,6 @@ IO.setup(24,IO.OUT)
 
 
 
-
 #Main Class
 
 
@@ -68,8 +68,10 @@ cube = cube()
 cubeArray = cube.buildCube()
 
 
-
-
+for x in range(4):
+    for y in range(4):
+        for z in range(4):
+            print(cubeArray[x][y][z].getPins())
 
 #an object that will be used to turn the cube off before and after each effect
 turnOffer = turnOff()
@@ -119,6 +121,11 @@ try:
                 cubeArray[0][0][1].on()
 
         elif choice == 3:
+                turnOffer.turnOffFunc(cubeArray)
+                tmp = randomEffect()
+                tmp.RandomFunc(cubeArray)
+
+        elif choice == 6:
             turnOffer.turnOffFunc(cubeArray)
             tmp = musicAnalyzer()
             tmp.musicAnalyzerFunc(cubeArray)
