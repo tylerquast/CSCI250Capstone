@@ -6,7 +6,7 @@ import time
 
 class musicAnalyzer():
     def musicAnalyzerFunc(self,cube):
-        chunk = 8192
+        chunk = 10000
         FORMAT = pyaudio.paInt16
         CHANNELS = 1
         RATE = 44100
@@ -36,7 +36,7 @@ class musicAnalyzer():
         while True:
             data = s.read(chunk)
             mx = audioop.max(data,2)
-            #print(mx)
+            print(mx)
             time.sleep(.2)
 
 
