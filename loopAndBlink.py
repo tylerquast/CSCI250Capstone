@@ -1,9 +1,3 @@
-#########################################
-#I will not beable to test this class
-#until I get back to golden, so I 
-#cant promise it will work, but it should
-#in theory
-#########################################
 import time
 import sys
 

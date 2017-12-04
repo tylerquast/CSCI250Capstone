@@ -36,7 +36,6 @@ class musicAnalyzer():
         while True:
             data = s.read(chunk)
             mx = audioop.max(data,2)
-            print(mx)
             time.sleep(.2)
 
 

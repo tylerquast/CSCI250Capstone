@@ -13,6 +13,8 @@ from turnOff import *
 from musicAnalyzer import *
 from randomEffect import *
 from expandingCube import *
+from fallingBlocks import *
+from spinner import *
 import numpy as np
 
 
@@ -121,6 +123,16 @@ try:
                 turnOffer.turnOffFunc(cubeArray)
                 tmp = randomEffect()
                 tmp.RandomFunc(cubeArray)
+
+        elif choice == 4:
+                turnOffer.turnOffFunc(cubeArray)
+                tmp = fallingBlocks()
+                tmp.fallingBlocksFunc(cubeArray)
+
+        elif choice == 5:
+                turnOffer.turnOffFunc(cubeArray)
+                tmp = spinner()
+                tmp.spinnerFunc(cubeArray)
 
         elif choice == 6:
             turnOffer.turnOffFunc(cubeArray)
