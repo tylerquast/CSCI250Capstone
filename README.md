@@ -1,10 +1,3 @@
-# TODO
-This section will be removed as they are completed:
-
-- Add more effects (Lets shoot for 5 (1/5 Completed))
-- Implement the sparkfun sound detector
-- Implement the usb audio source
-- Fix the readme to be presentable (This document)
 # CSCI250Capstone
 
 
