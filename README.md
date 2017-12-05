@@ -1,10 +1,3 @@
-# TODO
-This section will be removed as they are completed:
-
-- Add more effects (Lets shoot for 5 (1/5 Completed))
-- Implement the sparkfun sound detector
-- Implement the usb audio source
-- Fix the readme to be presentable (This document)
 # CSCI250Capstone
 
 
@@ -53,4 +46,5 @@ Botom
 To add more classes follow the same format as the examples already provited. an array of LED objects must be passed to each effect and should be worked with as a normal 3 dimensional array.
 
 
+*Note: Due to python's strict indentation rules, the original main.py must be run from the terminal rather than an IDE like idle. 
 
