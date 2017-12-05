@@ -11,6 +11,14 @@ import numpy as np
 import random
 
 
+#######################################
+#This is the effec we plan to leave on
+#during the presentation. IT just 
+#randomly selects one of the patterns
+#(minus the musuic analyzer) and plays
+#them all in a loop
+#######################################
+
 
 
 

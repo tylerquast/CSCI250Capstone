@@ -4,6 +4,16 @@ import sys
 
 sys.dont_write_bytecode = True
 
+
+
+##################################
+#This is by far the most complex
+#pattern. The paper goes into 
+#great detail about how this
+#pattern works.
+##################################
+
+
 class spinner():
     def spinnerFunc(self,cube):
         counter = 0

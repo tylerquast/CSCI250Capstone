@@ -5,6 +5,13 @@ from turnOff import *
 sys.dont_write_bytecode= True
 
 
+
+
+################################3##
+#This class makes entire rows move
+#Up and down
+###################################
+
 class fallingBlocks():
     def fallingBlocksFunc(self,cube):
         sleepTime = .08
