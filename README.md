@@ -46,4 +46,5 @@ Botom
 To add more classes follow the same format as the examples already provited. an array of LED objects must be passed to each effect and should be worked with as a normal 3 dimensional array.
 
 
+*Note: Due to python's strict indentation rules, the original main.py must be run from the terminal rather than an IDE like idle. 
 
