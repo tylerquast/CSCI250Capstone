@@ -6,16 +6,6 @@ import numpy as np
 sys.dont_write_bytecode = True
 
 
-####################################
-#TODO: add the tmp LEDs to the array 
-#      to create an array of LED 
-#      objects to represent the cube
-#
-#      I need to google this because
-#      the 3d numpy array expects
-#      numbers only. but im on a 
-#      fuckin plane rn LLLLMMMMAAAAAAAAOOOOOOOOOO
-#################################### 
 class cube():
 	def __init__(self):
 		#Creats a 2d array of values corresponding to where 

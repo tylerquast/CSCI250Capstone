@@ -4,9 +4,28 @@ import random
 from turnOff import *
 sys.dont_write_bytecode=True
 
+
+
+#####################################
+#This effect creates a cube from the 
+#botom front LED and the back botom
+#LED and expands them up and back 
+#And then does a similar process from
+#the center
+#####################################
+
+
+
 class expandingCube():
     def expandingCubeFunc(self,cube):
         sleepTime = .08 
+	#Basic Outline: A square number of 
+	#LEDs are turned on, and then that 
+	#amount is stalled before the next
+	#set of LEDs are turned on.
+	#This goes until the cube is fully
+	#lit in which it will reverse
+	# and start turning off the LEDS
         for x in range(2):
             for y in range(2):
                 for z in range(2):
