@@ -2,7 +2,10 @@ import sys
 
 sys.dont_write_bytecode =True
 
-
+#############################
+#A simple class that simply
+#turns off the LED cube
+#############################
 
 class turnOff():
     def turnOffFunc(self,cube):
