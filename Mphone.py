@@ -27,14 +27,14 @@ def Mphone():
 ##    #for ADC: getcontext().prec = 2
     
     GPIO.setmode(GPIO.BCM)
-    GPIO.setup(27, GPIO.IN)
+    GPIO.setup(25, GPIO.IN)
     
     sound =0
     time0 = time.time()
     stopTime = time0 + 5
     print('\n\n searching \n \n')
     while (time.time() < stopTime): #search for input for 5 seconds
-            input = GPIO.input(27)
+            input = GPIO.input(25)
             #print(input)
             
             if input == True:
