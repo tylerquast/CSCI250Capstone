@@ -17,14 +17,14 @@ class LED():
 	#Turns on the LED accessing the Rasp pi	
 	def on(self):
 		self.isOn = True
-		IO.output(self.pinRow,0)
-		IO.output(self.pinCol,1)
+		IO.output(self.pinRow,1)
+		IO.output(self.pinCol,0)
 
 	#Turns off the LED accessing the Rasp pi	
 	def off(self):
 		self.isOn = False
-	        IO.output(self.pinRow,1)
-	        IO.output(self.pinCol,0)
+	        IO.output(self.pinRow,0)
+	        IO.output(self.pinCol,1)
 
 	#returns if the LED is on or off. Will be usefull for
 	#debugging and building new effects

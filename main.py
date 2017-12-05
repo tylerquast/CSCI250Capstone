@@ -13,6 +13,7 @@ from turnOff import *
 from musicAnalyzer import *
 from randomEffect import *
 from expandingCube import *
+from idlePatter import *
 from fallingBlocks import *
 from spinner import *
 import numpy as np
@@ -76,6 +77,7 @@ cubeArray = cube.buildCube()
 turnOffer = turnOff()
 turnOffer.turnOffFunc(cubeArray)
 
+
 #A sparkfun sound detector is used to trigger various 
 #effects with claps
 #get user to select to either keyboard mode or microphone mode to enter input
@@ -138,6 +140,11 @@ try:
             turnOffer.turnOffFunc(cubeArray)
             tmp = musicAnalyzer()
             tmp.musicAnalyzerFunc(cubeArray)
+
+	elif choice == 7:
+		turnOffer.turnOffFunc(cubeArray)
+		tmp = idlePattern()
+		tmp.idlePatternFunc(cubeArray)
 
         #can add more pattern choices below here
 
